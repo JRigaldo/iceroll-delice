@@ -1,0 +1,23 @@
+.card {
+  max-width: 965px;
+  width: 100%;
+}
+
+.cardlink{
+  background-color: var(--theme-primary);
+  border-radius: 10px;
+  overflow: hidden;
+  button{
+    display: inline;
+    text-align: center;
+    font-weight: var(--body-bold);
+    font-size: 1.4rem;
+    padding: 1.7rem 0;
+    width: 100%;
+  }
+}
+
+.cardvid img{
+  border-radius: 10px;
+  overflow: hidden;
+}

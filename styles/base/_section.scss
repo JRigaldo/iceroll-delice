@@ -1,0 +1,42 @@
+/**
+------------- IMAGE
+ */
+.background-image-home-over{
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 1000px;
+  height: auto;
+  width: 80vw;
+  transform: rotate(-20deg) translate(-7%, -56%);
+}
+
+.background-image-home-under{
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 1200px;
+  height: auto;
+  width: 65vw;
+  transform: translate(17%, -6%);
+}
+
+.home-logo{
+  display: block;
+  max-width: 1200px;
+  width: 65vw;
+  padding-top: 300px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+/**
+------------- TEXT
+ */
+h1, h2, h3{
+  color: var(--theme-primary);
+  font-weight: var(--body-bold);
+}
+
+h1.home-big-title{
+  color: var(--white);
+}

@@ -1,0 +1,438 @@
+/** ------- FIELD INPUT ------- **/
+.field {
+  position: relative;
+  height: 45px;
+  margin: 15px 0;
+}
+
+.field-helper {
+  padding-left: 10px;
+  font-size: 0.8rem;
+}
+
+.field:after,
+.field:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.field:before {
+  background-color: transparent;
+}
+
+.field:after {
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.is-focused .field-label {
+  font-size: 12px;
+  color: var(--secondary);
+}
+
+.field.is-focused:after {
+  transform: scaleX(1);
+}
+
+.has-label .field-label {
+  font-size: 12px;
+  color: var(--secondary);
+  transform: translateY(-8px) scale(0.95);
+}
+
+.field-label {
+  position: relative;
+  line-height: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  transform: translateY(24px);
+  transition: transform 0.3s;
+  transform-origin: 0 50%;
+  z-index: 10;
+  color: var(--primary);
+  margin-left: 10px;
+}
+
+input.field-input {
+  position: relative;
+  padding: 8px 10px;
+  line-height: 16px;
+  border: 1px solid var(--secondary);
+  -webkit-appearance: none;
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: var(--gray-light);
+}
+
+//** ------- FIELD INLINE BORDER-BOTTOM ------- **/
+
+.field-inline {
+  position: relative;
+  height: 50px;
+  margin: 0 1rem;
+  //   padding: 16px 0 8px 0;
+}
+
+.field-inline:after,
+.field:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.field-inline:before {
+  background-color: var(--gray-light);
+}
+
+.field-inline:after {
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.is-focused .field-inline-label {
+  font-size: 12px;
+  color: var(--secondary);
+}
+
+.field-inline.is-focused:after {
+  transform: scaleX(1);
+}
+
+.has-label .field-inline-label {
+  font-size: 12px;
+  font-weight: var(--body-light);
+  color: var(--gray);
+  transform: translateY(0) scale(0.95);
+}
+
+.field-inline-label {
+  position: relative;
+  line-height: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  transform: translateY(24px);
+  transition: transform 0.3s;
+  transform-origin: 0 50%;
+  z-index: 10;
+  color: var(--gray);
+  margin-left: 10px;
+}
+
+input.field-inline-input {
+  position: relative;
+  padding: 8px 10px;
+  line-height: 16px;
+  border-bottom: 1px solid var(--theme-primary);
+  -webkit-appearance: none;
+  width: 100%;
+  //   height: 50px;
+  height: 100%;
+  font-size: 16px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+//** ------- TEXTAREA ------- **/
+.field-message {
+  position: relative;
+  min-height: 72px;
+  //padding: 16px 0 0 0;
+}
+
+.field-label-message {
+  position: relative;
+  z-index: 10;
+  line-height: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+  margin: 0;
+  transform: translateY(35px);
+  transition: transform 0.3s;
+  transform-origin: 0 50%;
+  color: var(--primary);
+  margin-left: 10px;
+}
+
+textarea.field-textarea {
+  position: relative;
+  z-index: 1;
+  background-color: var(--gray-light);
+  -webkit-appearance: none;
+  width: 100%;
+  min-height: 72px;
+  font-size: 16px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  resize: none;
+}
+
+textarea.field-textarea:after,
+textarea.field-textarea:before {
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  border: 2px solid var(--primary);
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.is-focused .field-label-message {
+  font-size: 12px;
+  color: var(--secondary);
+}
+
+.field-message.is-focused:after {
+  transform: scaleX(1);
+}
+
+.has-label .field-label-message {
+  font-size: 12px;
+  color: var(--secondary);
+  transform: translateY(0) scale(0.95);
+}
+
+/** ------- MESSAGE ERROR ------- **/
+.message-error {
+  display: none;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  color: var(--secondary);
+}
+
+/** ------- SELECT OPTIONS ------- **/
+
+.form-mobile {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+
+.select-box {
+  position: relative;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 80px;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  position: absolute;
+  z-index: 10;
+  top: 55px;
+  left: 0;
+  background: var(--gray-light);
+  color: var(--secondary);
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  //   transition: all 0.4s;
+  //   border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: var(--white);
+  //   border-radius: 8px;
+  border-bottom: 1px solid var(--theme-primary);
+  margin-bottom: 8px;
+  color: var(--secondary);
+  position: relative;
+  text-align: left;
+  font-size: 1.1rem;
+  order: 0;
+  display: table;
+  height: 50px;
+}
+
+.selected.field-inline {
+  margin: 0;
+}
+
+.selected span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--gray);
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.selected svg.triangle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  min-width: 20px;
+}
+
+.select-box .options-container.active + .selected svg {
+  transform: rotateX(180deg);
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 5px;
+  background: var(--gray-light);
+  //   border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  //   border-radius: 0 8px 8px 0;
+}
+
+.select-box .option {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  background: var(--gray);
+}
+
+.select-box label {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  opacity: 0;
+}
+
+/** ------- SELECT FLAG ------- **/
+
+.select-box-icons {
+  position: relative;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  width: 30px;
+  height: 100%;
+  flex-direction: column;
+  margin-right: 5px;
+  margin-left: 15px;
+  svg {
+    width: 30px;
+  }
+}
+
+.select-box-icons .options-container-icons {
+  position: absolute;
+  z-index: 10;
+  top: 55px;
+  left: 0;
+  color: var(--secondary);
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  //   transition: all 0.4s;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected-icon {
+  position: relative;
+  order: 0;
+  display: table;
+  height: 100%;
+  span {
+    display: table-cell;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    .option-flag-icon {
+      width: 30px;
+    }
+  }
+}
+
+// .selected-icon span {
+//   display: table-cell;
+//   vertical-align: middle;
+// }
+
+.select-box-icons .options-container-icons.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.selected-icon svg.triangle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.select-box-icons .options-container-icons.active + .selected svg {
+  transform: rotateX(180deg);
+}
+
+.select-box-icons .option-icon {
+  margin: 15px 0;
+  cursor: pointer;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+.select-box-icons .option-icon .radio {
+  opacity: 0;
+}
+
+.form-testPhone .field:after,
+.form-testPhone .field:before,
+.form-testPhone .field-inline {
+  display: none;
+}
+
+.testPhone-phone {
+  min-width: 300px;
+}
+
+.form-testPhone > div {
+  margin-bottom: 1rem;
+}
