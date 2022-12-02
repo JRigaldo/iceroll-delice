@@ -5,8 +5,9 @@ body {
 
 body {
   font-family: var(--theme-font-family);
-  background-color: var(--white);
+  background-color: var(--black);
   font-size: var(--font-size-body);
+  color: var(--black);
   overflow-x: hidden;
 }
 
@@ -31,10 +32,10 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: var(--body-bold);
   letter-spacing: 1px;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 p,
@@ -53,6 +54,5 @@ header{
 }
 
 main{
-  background-color: var(--black);
   margin-top: var(--header-top);
 }

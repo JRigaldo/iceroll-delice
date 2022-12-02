@@ -14,11 +14,11 @@
 </head>
 <body>
 <header class="header">
-    <nav class="header__logo ml-10">
+    <nav class="header__logo ml-10 hidden-down">
         <a href="#" class="header__logo"><img src="../images/logo-iceRollDelice-inline.png"
                                               alt="logo iceroll delice"></a>
     </nav>
-    <nav class="header__nav-links">
+    <nav class="header__nav-links hidden-down">
         <ul>
             <li><a href="#" class="active">Accueil</a></li>
             <li><a href="#">Événement</a></li>
@@ -29,9 +29,109 @@
                                                                alt="iceroll spirale"></span></a></li>
         </ul>
     </nav>
+    <a class="navbar-toggle navbar-toggle--left hidden-up" href="#" id="header-icon-social">
+        <svg height="32.727" id="share" viewBox="0 0 30 32.727" width="30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M324.146,20.739A4.739,4.739,0,1,1,319.407,16,4.739,4.739,0,0,1,324.146,20.739Zm0,0"
+                  data-name="Tracé 6" id="Tracé_6" transform="translate(-295.239 -14.906)"/>
+            <path
+                    d="M304.5,11.665a5.833,5.833,0,1,1,5.832-5.833A5.838,5.838,0,0,1,304.5,11.665Zm0-9.478a3.645,3.645,0,1,0,3.645,3.645A3.649,3.649,0,0,0,304.5,2.187Zm0,0"
+                    data-name="Tracé 7" id="Tracé_7" transform="translate(-280.333)"/>
+            <path d="M324.146,362.071a4.739,4.739,0,1,1-4.739-4.739A4.739,4.739,0,0,1,324.146,362.071Zm0,0"
+                  data-name="Tracé 8" id="Tracé_8" transform="translate(-295.239 -335.176)"/>
+            <path
+                    d="M304.5,353a5.833,5.833,0,1,1,5.832-5.832A5.838,5.838,0,0,1,304.5,353Zm0-9.478a3.645,3.645,0,1,0,3.645,3.646A3.65,3.65,0,0,0,304.5,343.519Zm0,0"
+                    data-name="Tracé 9" id="Tracé_9" transform="translate(-280.333 -320.27)"/>
+            <path d="M25.478,191.407a4.739,4.739,0,1,1-4.739-4.739A4.739,4.739,0,0,1,25.478,191.407Zm0,0"
+                  data-name="Tracé 10" id="Tracé_10" transform="translate(-14.906 -175.043)"/>
+            <path
+                    d="M5.832,182.333a5.832,5.832,0,1,1,5.833-5.832A5.838,5.838,0,0,1,5.832,182.333Zm0-9.478A3.645,3.645,0,1,0,9.478,176.5,3.649,3.649,0,0,0,5.832,172.855Zm0,0"
+                    data-name="Tracé 11" id="Tracé_11" transform="translate(0 -160.137)"/>
+            <path
+                    d="M115.624,100.846a1.253,1.253,0,0,1-1.108-.736,1.58,1.58,0,0,1,.477-1.989l11.82-7.713a1.19,1.19,0,0,1,1.738.545,1.58,1.58,0,0,1-.477,1.989l-11.82,7.713A1.144,1.144,0,0,1,115.624,100.846Zm0,0"
+                    data-name="Tracé 12" id="Tracé_12" transform="translate(-106.533 -84.622)"/>
+            <path
+                    d="M127.463,276.85a1.144,1.144,0,0,1-.629-.191l-11.82-7.713a1.579,1.579,0,0,1-.476-1.989,1.19,1.19,0,0,1,1.737-.545l11.82,7.713a1.579,1.579,0,0,1,.476,1.989A1.255,1.255,0,0,1,127.463,276.85Zm0,0"
+                    data-name="Tracé 13" id="Tracé_13" transform="translate(-106.554 -249.716)"/>
+        </svg>
+    </a>
+    <a class="navbar-toggle  navbar-toggle--right hidden-up" href="#" id="header-icon-links">
+        <svg height="21.667" id="menu" viewBox="0 0 30 21.667" width="30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.75,125.305H1.25a1.321,1.321,0,0,1,0-2.637h27.5a1.321,1.321,0,0,1,0,2.637Zm0,0"
+                  data-name="Tracé 1" id="Tracé_1" transform="translate(0 -113.153)"/>
+            <path
+                    d="M28.75,2.637H1.25A1.286,1.286,0,0,1,0,1.319,1.286,1.286,0,0,1,1.25,0h27.5A1.286,1.286,0,0,1,30,1.319,1.286,1.286,0,0,1,28.75,2.637Zm0,0"
+                    data-name="Tracé 2" id="Tracé_2"/>
+            <path d="M28.75,247.969H1.25a1.321,1.321,0,0,1,0-2.637h27.5a1.321,1.321,0,0,1,0,2.637Zm0,0"
+                  data-name="Tracé 3" id="Tracé_3" transform="translate(0 -226.303)"/>
+        </svg>
+    </a>
 </header>
+<!-- MOBILE NAVIGATION MENU -->
+<aside class="mobile-menu mobile-menu--right mobile-menu-links clearfix">
+    <div class="mobile-menu--container">
+        <a class="exit-menu" href="#" id="exit-menu-links">
+            <svg height="30" viewbox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg')}}">
+                <path d="M29.728,24.1h0l-9.1-9.1,9.1-9.1h0a.94.94,0,0,0,0-1.326l-4.3-4.3a.94.94,0,0,0-1.326,0h0L15,9.376,5.9.275h0a.94.94,0,0,0-1.326,0l-4.3,4.3a.94.94,0,0,0,0,1.326h0l9.1,9.1-9.1,9.1h0a.94.94,0,0,0,0,1.326l4.3,4.3a.94.94,0,0,0,1.326,0h0l9.1-9.1,9.1,9.1h0a.939.939,0,0,0,1.325,0l4.3-4.3a.939.939,0,0,0,0-1.326Z" id="cross" transform="translate(-0.001 -0.001)"/>
+            </svg>
+        </a>
+        <nav class="mobile-menu--text">
+            <ul>
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#">Événement</a></li>
+                <li><a href="#">Carte & Prix</a></li>
+                <li><a href="#">Le concept</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><span class="iceroll-spirale"><img src="../images/iceroll-spirale.png" alt="iceroll spirale"></span></a></li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<!-- MOBILE NAVIGATION SOCIAL -->
+<aside class="mobile-menu mobile-menu--left mobile-menu-social clearfix">
+    <div class="mobile-menu--container">
+        <a class="exit-menu" href="#" id="exit-menu-social">
+            <svg height="30" viewbox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg')}}">
+                <path
+                        d="M29.728,24.1h0l-9.1-9.1,9.1-9.1h0a.94.94,0,0,0,0-1.326l-4.3-4.3a.94.94,0,0,0-1.326,0h0L15,9.376,5.9.275h0a.94.94,0,0,0-1.326,0l-4.3,4.3a.94.94,0,0,0,0,1.326h0l9.1,9.1-9.1,9.1h0a.94.94,0,0,0,0,1.326l4.3,4.3a.94.94,0,0,0,1.326,0h0l9.1-9.1,9.1,9.1h0a.939.939,0,0,0,1.325,0l4.3-4.3a.939.939,0,0,0,0-1.326Z"
+                        id="cross" transform="translate(-0.001 -0.001)"/>
+            </svg>
+        </a>
+        <nav class="mobile-menu--icon">
+            <ul>
+                <li class="mobile-menu--icon-item">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="34.751" height="40" viewBox="0 0 34.751 40">
+                            <path id="tiktok"
+                                  d="M85.627.033C87.811,0,89.977.017,92.144,0a10.381,10.381,0,0,0,2.917,6.95,11.754,11.754,0,0,0,7.067,2.983V16.65a17.838,17.838,0,0,1-7-1.617,20.589,20.589,0,0,1-2.7-1.55c-.017,4.867.017,9.733-.033,14.583a12.73,12.73,0,0,1-2.25,6.567,12.417,12.417,0,0,1-9.85,5.35,12.153,12.153,0,0,1-6.8-1.717,12.568,12.568,0,0,1-6.083-9.517c-.033-.833-.05-1.667-.017-2.483a12.547,12.547,0,0,1,14.55-11.133c.033,2.467-.067,4.933-.067,7.4a5.718,5.718,0,0,0-7.3,3.533,6.611,6.611,0,0,0-.233,2.683,5.672,5.672,0,0,0,5.833,4.783,5.6,5.6,0,0,0,4.617-2.683,3.845,3.845,0,0,0,.683-1.767c.167-2.983.1-5.95.117-8.933.017-6.717-.017-13.417.033-20.116Z"
+                                  transform="translate(-67.376)" fill="#fff"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                            <path id="facebook"
+                                  d="M36.25,0H3.75A3.761,3.761,0,0,0,0,3.75v32.5A3.761,3.761,0,0,0,3.75,40H20V22.5H15v-5h5V15a7.512,7.512,0,0,1,7.5-7.5h5v5h-5A2.507,2.507,0,0,0,25,15v2.5h7.5l-1.25,5H25V40H36.25A3.761,3.761,0,0,0,40,36.25V3.75A3.761,3.761,0,0,0,36.25,0Z"
+                                  fill="#fff"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56.873" height="40" viewBox="0 0 56.873 40">
+                            <path id="youtube"
+                                  d="M56.4,84.531s-.555-3.921-2.266-5.643a8.143,8.143,0,0,0-5.7-2.41C40.478,75.9,28.537,75.9,28.537,75.9h-.022s-11.941,0-19.894.578a8.143,8.143,0,0,0-5.7,2.41C1.211,80.61.667,84.531.667,84.531A86.282,86.282,0,0,0,.1,93.74v4.31a86.558,86.558,0,0,0,.567,9.209s.555,3.921,2.255,5.643c2.166,2.266,5.01,2.188,6.276,2.433,4.554.433,19.339.566,19.339.566s11.952-.022,19.906-.589a8.143,8.143,0,0,0,5.7-2.41c1.711-1.722,2.266-5.643,2.266-5.643a86.282,86.282,0,0,0,.567-9.209V93.74a88.31,88.31,0,0,0-.578-9.209Zm-33.746,18.75V87.3l15.362,8.02-15.362,7.964Z"
+                                  transform="translate(-0.1 -75.9)" fill="#fff"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+<div class="site-cover" id="site-cover"></div>
 <main>
-    <aside class="heading__social">
+    <aside class="heading__social hidden-down">
         <nav class="social--row-icon">
             <ul>
                 <li>
@@ -65,117 +165,291 @@
         </nav>
     </aside>
     <section>
-        <img src="../images/background-fruit-1.png" alt="flying strawberry" class="background-image-home-over">
-        <img src="../images/background-icercream-1.png" alt="flying icecream" class="background-image-home-under">
         <div class="container">
+            <img src="../images/background-fruit-1.png" alt="flying strawberry" class="background-image-home-over">
+            <img src="../images/background-icercream-1.png" alt="flying icecream" class="background-image-home-under">
             <div class="mt-20 mb-20">
                 <img class="home-logo" src="../images/logo-iceRollDelice-inline.svg" alt="Web site logo iceroll delice">
                 <h1 class="home-big-title">Des glaces roulées faites devant vous ! Profitez du spectacle avant de les
                     déguster.</h1>
             </div>
+            <h2>Faites un devis</h2>
+            <a href="#" class="card card-layup">
+                <div class="card-container">
+                    <div class="imgBox">
+                        <img src="../images/home-celibart.jpg" alt="créer un devis devis">
+                    </div>
+                    <div class="content">
+                        <h3>Vous voulez organiser un evenement et vous voulez savoie combien cela va vous coûter ?</h3>
+                    </div>
+                </div>
+                <span class="button-container"><button>Il vous suffit de remplir se questionnaire</button></span>
+            </a>
         </div>
-            <div class="swiper__container">
-                <div class="swiper-l">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-panier_02.jpg" alt="Panier de fruits">
-                                <figcaption></figcaption>
-                            </figure>
+        <div class="swiper__container">
+            <div class="swiper-l">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-panier_02.jpg" alt="Panier de fruits">
+                            <figcaption><p>Suivez nous étape par étape afin que nous vous montrions le concept. Première
+                                    étape choisissez un fruit.</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-fruit.jpg" alt="Mettre les fruits">
+                            <figcaption><p>Dispose les fruits sur la plaque gelée</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-creme.jpg" alt="Mettre la crème">
+                            <figcaption><p>On ajoute de la crème pour faire la crème glacée</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-mix.jpg"
+                                 alt="Mixer les fruits et la crème avec les spatules">
+                            <figcaption><p>On casse le fruit et on melange avec les spatules</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-mix-2.jpg" alt="Faire une pâte homogène">
+                            <figcaption><p>On en fait une pâte homogène</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-aplatir-1.jpg" alt="Aplatir la pate sur la plancha gelée">
+                            <figcaption><p>On applati la pâte sur la plancha à l'aide des spatules</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-aplatir-2.jpg" alt="Aplatir de manière uniforme">
+                            <figcaption><p>Les petits détails sont importants car il faut l'platir de manière
+                                    uniforme</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-aplatir-3.jpg" alt="Créer une surface carrée">
+                            <figcaption><p>Il faut répandre la masse sur toute la largeur de la plaque afin de pouvoir
+                                    faire plusieurs rouleaux</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-rouler-1.jpg"
+                                 alt="La racler la plancha avec les spatules">
+                            <figcaption><p>Et on commence à créer les rouleaux en raclant avec les spatules sur la
+                                    plancha</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-rouler-2.jpg" alt="S'appliquer à faire de beaux rouleaux">
+                            <figcaption><p>Et on répète l'opération</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-rouler-3.jpg"
+                                 alt="Continuer le processus jusqu'à qu'il n'y ait plus de matière sur la plancha">
+                            <figcaption><p>Chaque glace se fait différement selon sa composition mais le principe reste
+                                    le même</p></figcaption>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="card-default">
+                            <img src="../images/home-carousel-finish-1.jpg" alt="Présentation de la glace">
+                            <figcaption><p>Produit final</p></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="shadow-overflow"></div>
+        </div>
+    </section>
+    <section>
+        <div class="container maxHeight-container">
+            <div class="row-stretch">
+                <div class="col-md-12">
+                    <h2>Glaciers qui font le show</h2>
+                </div>
+                <div class="col-md-2">
+                    <div class="imgHeight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                            <path id="expand_content_FILL0_wght400_GRAD0_opsz48"
+                                  d="M10,38V26h3v9h9v3ZM35,22V13H26V10H38V22Z" transform="translate(-10 -10)"
+                                  fill="#fff"/>
+                        </svg>
+                        <img src="../images/chef-dany.jpg" alt="Chef Dany">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="imgHeight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                            <path id="expand_content_FILL0_wght400_GRAD0_opsz48"
+                                  d="M10,38V26h3v9h9v3ZM35,22V13H26V10H38V22Z" transform="translate(-10 -10)"
+                                  fill="#fff"/>
+                        </svg>
+                        <img src="../images/chef-jay.jpg" alt="Chef Dany">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="video-container">
+                        <div class="video">
+                            <img src="../images/video-1.jpg" alt="video">
                         </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-fruit.jpg" alt="Mettre les fruits">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-mix.jpg" alt="Mixer les fruits et la crème avec les spatules">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-mix-2.jpg" alt="Faire une pâte homogène">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-aplatir-1.jpg" alt="Aplatir la pate sur la plancha gelée">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-aplatir-2.jpg" alt="Aplatir de manière uniforme">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-aplatir-3.jpg" alt="Créer une surface carrée">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-rouler-1.jpg" alt="La racler la plancha avec les spatules">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-rouler-2.jpg" alt="S'appliquer à faire de beaux rouleaux">
-                                <figcaption></figcaption>
-                            </figure>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure>
-                                <img src="../images/home-carousel-rouler-3.jpg" alt="Continuer le processus jusqu'à qu'il n'y ait plus de matière sur la plancha">
-                                <figcaption></figcaption>
-                            </figure>
+                        <div class="video">
+                            <img src="../images/video-2.jpg" alt="video">
                         </div>
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
         <div class="container">
-            <div class="row-top">
-                <div class="col-md-12">
-                    <h2>Faites un devis</h2>
-                </div>
-                <div class="col-md-8">
-                    <a href="#" class="card cardlink">
-                        <div class="cardlink__header">
-                            <img src="../images/home-devis.jpg" alt="créer un devis devis">
-                        </div>
-                        <button>Générez un devis adapté à votre fête</button>
-                    </a>
-                </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-12">
-                    <h2>La vidéo du show</h2>
-                </div>
-                <div class="col-md-8">
-                    <div class="card cardvid">
-                        <img src="../images/home-video.jpg" alt="video">
+            <h2>Un show pour des fêtes</h2>
+            <div class="row-top gutter">
+                <div class="col-md-6">
+                    <div class="card-default card-theme-primary">
+                        <figure>
+                            <img src="../images/home-iceroll-event.jpg" alt="iceroll event">
+                            <figcaption><h4>Voir Ice roll events</h4></figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-12">
-                    <h2>Show devant</h2>
+                <div class="col-md-6">
+                    <a href="#">
+                        <figure class="card-default card-theme-primary">
+                            <img src="../images/home-iceroll-concept.jpg" alt="iceroll concept">
+                            <figcaption><h4>Voir Ice roll events</h4></figcaption>
+                        </figure>
+                    </a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="display-thumb-container">
+                <div class="display-thumb-content">
+                    <div class="display-thumb">
+                        <figure class="card-default">
+                            <img src="../images/display-1.jpg" alt="creme galcée 1">
+                            <figcaption><h5>Avocat</h5></figcaption>
+                        </figure>
+                        <figure class="card-default">
+                            <img src="../images/display-2.jpg" alt="creme galcée 2">
+                            <figcaption><h5>Mangue</h5></figcaption>
+                        </figure>
+                        <figure class="card-default">
+                            <img src="../images/display-3.jpg" alt="creme galcée 3">
+                            <figcaption><h5>Fraise</h5></figcaption>
+                        </figure>
+                    </div>
+                    <div class="display-thumb gutter">
+                        <figure class="card-default">
+                            <img src="../images/display-4.jpg" alt="creme galcée 4">
+                            <figcaption><h5>Pistache</h5></figcaption>
+                        </figure>
+                        <figure class="card-default">
+                            <img src="../images/display-5.jpg" alt="creme galcée 5">
+                            <figcaption><h5>Maracuja</h5></figcaption>
+                        </figure>
+                        <figure class="card-default">
+                            <img src="../images/display-6.jpg" alt="creme galcée 6">
+                            <figcaption><h5>Oero</h5></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <a href="#" class="btn-flex absolute-bottom-center">
+                    <button class="btn btn-accent btn-bold">Exemples de glaces</button>
+                </a>
             </div>
         </div>
     </section>
 </main>
 <footer>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <div class="container">
+        <h2>Nous sommes à votre diposition</h2>
+        <form class="form-container">
+            <div class="form-box">
+                <div class="form-box__left"></div>
+                <div class="form-box__right">
+                    <div class="row-top gutter">
+                        <div class="col-md-12">
+                            <h3>Formulaire de contact</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <label for="firstname" class="field-label">Prénom</label>
+                                <input id="firstname" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <label for="lastname" class="field-label">Nom</label>
+                                <input id="lastname" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <label for="email" class="field-label">Email</label>
+                                <input id="email" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <label for="phone" class="field-label">Mobile</label>
+                                <input id="phone" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <label for="event" class="field-label">Type d'événement</label>
+                                <input id="event" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="field">
+                                <label for="guest" class="field-label">Nombre de convives</label>
+                                <input id="guest" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="field">
+                                <label for="subject" class="field-label">Type de sujet</label>
+                                <input id="subject" type="text" class="field-input">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="textarea">
+                                <label for="textarea" class="field-label">Message</label>
+                                <textarea id="textarea" type="text" class="field-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary">Envoyez le message</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../js/swiper.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/menu.js"></script>
 </footer>
 </body>
 </html>

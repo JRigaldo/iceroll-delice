@@ -45,6 +45,10 @@ textarea {
   margin: 0;
 }
 
+input:focus {
+  outline: none ! important;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -97,6 +101,14 @@ body {
 picture {
   display: block;
 }
+
+button {
+  background-color: transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+}
+
 button:focus {
   outline: 0;
 }

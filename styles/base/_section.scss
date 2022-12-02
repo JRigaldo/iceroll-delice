@@ -1,8 +1,9 @@
 /**
-------------- IMAGE
+------------- BACKGROUND IMAGE
  */
 .background-image-home-over{
-  position: fixed;
+  z-index: -1;
+  position: absolute;
   top: 0;
   left: 0;
   max-width: 1000px;
@@ -12,15 +13,19 @@
 }
 
 .background-image-home-under{
-  position: fixed;
+  z-index: -1;
+  position: absolute;
   top: 0;
   right: 0;
   max-width: 1200px;
   height: auto;
   width: 65vw;
-  transform: translate(17%, -6%);
+  transform: translate(35%, -6%);
 }
 
+/**
+------------- LOGO
+ */
 .home-logo{
   display: block;
   max-width: 1200px;
@@ -39,4 +44,80 @@ h1, h2, h3{
 
 h1.home-big-title{
   color: var(--white);
+}
+/**
+------------- CONTAINER HEIGHT
+ */
+.maxHeight-container{
+  max-height: 1000px;
+}
+
+/**
+------------- HOME CARDS POSITION
+ */
+.display-thumb{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.display-thumb .card-default{
+  margin: 2rem 0;
+}
+
+/**
+------------- Hidden overflow
+ */
+.display-thumb-container{
+  position: relative;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  .display-thumb-content{
+    @include absolute-center;
+    width: 100%;
+  }
+  &:before{
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 29%, rgba(0,0,0,0) 100%);
+  }
+  &:after{
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 200px;
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,1) 29%, rgba(0,0,0,0) 100%);
+  }
+}
+
+.display-thumb .card-default{
+  &:nth-child(1){
+    transform: translateY(100px);
+  }
+  &:nth-child(2){
+    transform: translateY(-100px);
+  }
+  &:nth-child(3){
+    transform: translateY(0);
+  }
+}
+
+.display-thumb-container .link-absolute-bottom-center{
+  bottom: 100px;
+  .btn{
+    font-size: 1.3rem;
+  }
 }
