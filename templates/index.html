@@ -14,10 +14,8 @@
 </head>
 <body>
 <header class="header">
-    <nav class="header__logo ml-10 hidden-down">
-        <a href="#" class="header__logo"><img src="../images/logo-iceRollDelice-inline.png"
-                                              alt="logo iceroll delice"></a>
-    </nav>
+    <a href="#" class="header__logo header__logo--up ml-10 hidden-down"><img src="../images/logo-iceRollDelice-inline.png" alt="logo iceroll delice"></a>
+    <a href="#" class="header__logo header__logo--down hidden-up"><img src="../images/logo-iceRollDelice-inline.png" alt="logo iceroll delice"></a>
     <nav class="header__nav-links hidden-down">
         <ul>
             <li><a href="#" class="active">Accueil</a></li>
@@ -29,42 +27,22 @@
                                                                alt="iceroll spirale"></span></a></li>
         </ul>
     </nav>
-    <a class="navbar-toggle navbar-toggle--left hidden-up" href="#" id="header-icon-social">
-        <svg height="32.727" id="share" viewBox="0 0 30 32.727" width="30" xmlns="http://www.w3.org/2000/svg">
-            <path d="M324.146,20.739A4.739,4.739,0,1,1,319.407,16,4.739,4.739,0,0,1,324.146,20.739Zm0,0"
-                  data-name="Tracé 6" id="Tracé_6" transform="translate(-295.239 -14.906)"/>
-            <path
-                    d="M304.5,11.665a5.833,5.833,0,1,1,5.832-5.833A5.838,5.838,0,0,1,304.5,11.665Zm0-9.478a3.645,3.645,0,1,0,3.645,3.645A3.649,3.649,0,0,0,304.5,2.187Zm0,0"
-                    data-name="Tracé 7" id="Tracé_7" transform="translate(-280.333)"/>
-            <path d="M324.146,362.071a4.739,4.739,0,1,1-4.739-4.739A4.739,4.739,0,0,1,324.146,362.071Zm0,0"
-                  data-name="Tracé 8" id="Tracé_8" transform="translate(-295.239 -335.176)"/>
-            <path
-                    d="M304.5,353a5.833,5.833,0,1,1,5.832-5.832A5.838,5.838,0,0,1,304.5,353Zm0-9.478a3.645,3.645,0,1,0,3.645,3.646A3.65,3.65,0,0,0,304.5,343.519Zm0,0"
-                    data-name="Tracé 9" id="Tracé_9" transform="translate(-280.333 -320.27)"/>
-            <path d="M25.478,191.407a4.739,4.739,0,1,1-4.739-4.739A4.739,4.739,0,0,1,25.478,191.407Zm0,0"
-                  data-name="Tracé 10" id="Tracé_10" transform="translate(-14.906 -175.043)"/>
-            <path
-                    d="M5.832,182.333a5.832,5.832,0,1,1,5.833-5.832A5.838,5.838,0,0,1,5.832,182.333Zm0-9.478A3.645,3.645,0,1,0,9.478,176.5,3.649,3.649,0,0,0,5.832,172.855Zm0,0"
-                    data-name="Tracé 11" id="Tracé_11" transform="translate(0 -160.137)"/>
-            <path
-                    d="M115.624,100.846a1.253,1.253,0,0,1-1.108-.736,1.58,1.58,0,0,1,.477-1.989l11.82-7.713a1.19,1.19,0,0,1,1.738.545,1.58,1.58,0,0,1-.477,1.989l-11.82,7.713A1.144,1.144,0,0,1,115.624,100.846Zm0,0"
-                    data-name="Tracé 12" id="Tracé_12" transform="translate(-106.533 -84.622)"/>
-            <path
-                    d="M127.463,276.85a1.144,1.144,0,0,1-.629-.191l-11.82-7.713a1.579,1.579,0,0,1-.476-1.989,1.19,1.19,0,0,1,1.737-.545l11.82,7.713a1.579,1.579,0,0,1,.476,1.989A1.255,1.255,0,0,1,127.463,276.85Zm0,0"
-                    data-name="Tracé 13" id="Tracé_13" transform="translate(-106.554 -249.716)"/>
-        </svg>
-    </a>
-    <a class="navbar-toggle  navbar-toggle--right hidden-up" href="#" id="header-icon-links">
-        <svg height="21.667" id="menu" viewBox="0 0 30 21.667" width="30" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28.75,125.305H1.25a1.321,1.321,0,0,1,0-2.637h27.5a1.321,1.321,0,0,1,0,2.637Zm0,0"
-                  data-name="Tracé 1" id="Tracé_1" transform="translate(0 -113.153)"/>
-            <path
-                    d="M28.75,2.637H1.25A1.286,1.286,0,0,1,0,1.319,1.286,1.286,0,0,1,1.25,0h27.5A1.286,1.286,0,0,1,30,1.319,1.286,1.286,0,0,1,28.75,2.637Zm0,0"
-                    data-name="Tracé 2" id="Tracé_2"/>
-            <path d="M28.75,247.969H1.25a1.321,1.321,0,0,1,0-2.637h27.5a1.321,1.321,0,0,1,0,2.637Zm0,0"
-                  data-name="Tracé 3" id="Tracé_3" transform="translate(0 -226.303)"/>
-        </svg>
-    </a>
+    <div class="navbar--groupe hidden-up">
+        <a class="navbar--link" href="#">
+            <button class="btn btn-accent">Devis</button>
+        </a>
+        <a class="navbar-toggle" href="#" id="header-icon-links">
+            <svg height="21.667" id="menu" viewBox="0 0 30 21.667" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.75,125.305H1.25a1.321,1.321,0,0,1,0-2.637h27.5a1.321,1.321,0,0,1,0,2.637Zm0,0"
+                      data-name="Tracé 1" id="Tracé_1" transform="translate(0 -113.153)"/>
+                <path
+                        d="M28.75,2.637H1.25A1.286,1.286,0,0,1,0,1.319,1.286,1.286,0,0,1,1.25,0h27.5A1.286,1.286,0,0,1,30,1.319,1.286,1.286,0,0,1,28.75,2.637Zm0,0"
+                        data-name="Tracé 2" id="Tracé_2"/>
+                <path d="M28.75,247.969H1.25a1.321,1.321,0,0,1,0-2.637h27.5a1.321,1.321,0,0,1,0,2.637Zm0,0"
+                      data-name="Tracé 3" id="Tracé_3" transform="translate(0 -226.303)"/>
+            </svg>
+        </a>
+    </div>
 </header>
 <!-- MOBILE NAVIGATION MENU -->
 <aside class="mobile-menu mobile-menu--right mobile-menu-links clearfix">
@@ -388,55 +366,65 @@
                         <div class="col-md-12">
                             <h3>Formulaire de contact</h3>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-12 col-md-12">
+                            <div class="field-radio">
+                                <input id="female" value="female" name="gender" type="radio" class="field-radio">
+                                <label for="female" class="field-label-radio">Femme</label>
+                            </div>
+                            <div class="field-radio">
+                                <input id="male" value="male" name="gender" type="radio" class="field-radio">
+                                <label for="male" class="field-label-radio">Homme</label>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6">
                             <div class="field">
                                 <label for="firstname" class="field-label">Prénom</label>
                                 <input id="firstname" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6 col-md-6">
                             <div class="field">
                                 <label for="lastname" class="field-label">Nom</label>
                                 <input id="lastname" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6 col-md-6">
                             <div class="field">
                                 <label for="email" class="field-label">Email</label>
                                 <input id="email" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6 col-md-6">
                             <div class="field">
                                 <label for="phone" class="field-label">Mobile</label>
                                 <input id="phone" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6 col-md-6">
                             <div class="field">
                                 <label for="event" class="field-label">Type d'événement</label>
                                 <input id="event" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-6 col-md-6">
                             <div class="field">
                                 <label for="guest" class="field-label">Nombre de convives</label>
                                 <input id="guest" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-12 col-md-12">
                             <div class="field">
                                 <label for="subject" class="field-label">Type de sujet</label>
                                 <input id="subject" type="text" class="field-input">
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-12 col-md-12">
                             <div class="textarea">
                                 <label for="textarea" class="field-label">Message</label>
-                                <textarea id="textarea" type="text" class="field-textarea"></textarea>
+                                <textarea id="textarea" type="textarea" class="field-textarea"></textarea>
                             </div>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-12 col-md-12">
                             <button class="btn btn-primary">Envoyez le message</button>
                         </div>
                     </div>

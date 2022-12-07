@@ -17,13 +17,13 @@
   background-color: var(--theme-primary);
   color: var(--white);
   &:hover {
-    background-color: var(--theme-secondary);
+    background-color: var(--white);
     color: var(--theme-primary);
   }
 }
 
 .btn-secondary {
-  background-color: var(--theme-secondary);
+  background-color: var(--white);
   &:hover {
     background-color: var(--theme-primary);
   }
@@ -33,6 +33,7 @@
   background-color: var(--white);
   color: var(--theme-primary);
   border-radius: 50px;
+  border: 1px solid var(--theme-primary);
   &:hover {
     background-color: var(--theme-primary);
     color: var(--white);
@@ -92,9 +93,9 @@
     width: 20px;
   }
   &:hover {
-    color: var(--theme-secondary);
+    color: var(--white);
     svg {
-      fill: var(--theme-secondary);
+      fill: var(--white);
     }
   }
 }

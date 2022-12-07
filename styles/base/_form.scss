@@ -31,3 +31,15 @@
     margin-top: 20px;
   }
 }
+
+@media screen and (max-width: 880px){
+  form{
+    div.form-box{
+      grid-template-columns: 1fr;
+    }
+
+    div.form-box__left{
+      height: 400px;
+    }
+  }
+}

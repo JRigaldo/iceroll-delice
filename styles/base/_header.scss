@@ -21,6 +21,10 @@
   }
 }
 
+.header__logo--down{
+  max-width: 150px;
+}
+
 .header__nav-links ul{
   display: flex;
   justify-content: flex-end;
@@ -61,13 +65,18 @@
 }
 
 .iceroll-spirale{
-  display: block;
+  position: relative;
+  display: inline-block;
   width: 35px;
   height: 35px;
   border-radius: 50%;
   @include shadow;
+  transition-duration: 300ms;
   img{
     @include absolute-center;
     width: 25px;
+  }
+  &:hover{
+    background-color: var(--black);
   }
 }
