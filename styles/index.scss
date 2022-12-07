@@ -9,7 +9,9 @@
 @import "base/section";
 @import "base/form";
 @import "base/mobile-nav";
+@import "base/responsive";
 
+@import "components/animation";
 @import "components/button";
 @import "components/card";
 @import "components/modal";
@@ -19,5 +21,5 @@
 @import "components/select";
 @import "components/social-media";
 @import "components/swiper";
-@import "components/imgHeight";
 @import "components/navbar";
+@import "components/video";

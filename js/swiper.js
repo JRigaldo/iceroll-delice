@@ -1,9 +1,9 @@
 var swiperL = document.querySelector('.swiper-l');
 if (typeof swiperL !== 'undefined' && swiperL) {
     var swiperLeft = new Swiper(".swiper-l", {
-        slidesPerView: 1,
+        slidesPerView: 2,
         centeredSlides: false,
-        spaceBetween: 35,
+        spaceBetween: 10,
         loop: true,
         pagination: {
             el: ".swiper-pagination",

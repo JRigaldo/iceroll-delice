@@ -1,0 +1,22 @@
+@mixin gradientBackground{
+  background: rgb(182,228,247);
+  background: linear-gradient(99deg, rgba(182,228,247,1) 0%, rgba(255,237,0,1) 36%, rgba(232,59,78,1) 54%, rgba(232,59,77,1) 77%, rgba(255,237,0,1) 86%, rgba(0,159,227,1) 100%);
+  content: '';
+  position: absolute;
+  background-size: 200%;
+  z-index: -1;
+  top: -4px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+}
+
+@keyframes gradientBackground{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 200%;
+  }
+}
+

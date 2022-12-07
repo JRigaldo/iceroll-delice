@@ -1,13 +1,12 @@
 .card-layup{
   position: relative;
-  width: 640px;
+  width: 100%;
+  max-width: 1120px;
   height: auto;
   border-radius: 10px;
   @include shadow;
-  background: rgb(79,19,26);
-  background: linear-gradient(130deg, rgba(79,19,26,1) 0%, rgba(232,59,78,1) 61%);
-  margin-top: 100px;
-  transition-duration: 0.3s;
+  background: rgb(0,0,0);
+  background: linear-gradient(315deg, rgba(0,0,0,1) 35%, rgba(232,59,78,1) 100%);
 }
 
 .card-container{
@@ -21,6 +20,10 @@
   width: 50%;
   height: 100%;
   transform: translateY(-60px);
+  &:before{
+    border-radius: 10px;
+    @include gradientBackground;
+  }
   img{
     position: relative;
     border-radius: 10px;
@@ -33,41 +36,39 @@
   display: table;
   width: 50%;
   padding: 1rem;
-  h3{
+  .content-position{
     display: table-cell;
     vertical-align: middle;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    color: var(--white);
+    h2, h3{
+      color: var(--white);
+    }
+    h3{
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+    button{
+      position: relative;
+      display: block;
+      margin: 3rem auto 0 auto;
+      background-color: var(--white);
+      color: var(--theme-primary);
+      font-size: 1rem;
+      font-weigth: var(--body-bold);
+      border-radius: 20px;
+      padding: 0.4rem 1rem;
+      @include shadow;
+      transition-duration: 300ms;
+    }
   }
 }
 
-.card-layup .imgBox:before{
-  content: '';
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 10px;
-  background-color: red;
-  opacity: 0.3;
-}
-
-.card-layup .button-container{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-10px);
-  button{
-    background-color: var(--white);
-    color: var(--theme-primary);
-    font-size: 1rem;
-    font-weigth: var(--body-bold);
-    border-radius: 20px;
-    padding: 0.4rem 1rem;
-    @include shadow;
+a.card-layup:hover{
+  .imgBox:before{
+    animation: gradientBackground 1.5s linear infinite;
+  }
+  .content .content-position button{
+    background-color: var(--theme-primary);
+    color: var(--white);
   }
 }
 

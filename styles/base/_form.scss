@@ -27,9 +27,22 @@
 }
 
 .form-box__right{
+  padding: 0.5rem;
   button{
     margin-top: 20px;
   }
+}
+
+.form-box h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.form-box h3{
+  text-align: center;
+  font-size: 1rem;
+  color: var(--gray-dark);
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 880px){

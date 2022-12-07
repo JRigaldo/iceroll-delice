@@ -1,11 +1,27 @@
 @include medium-down{
   div.swiper__container{
-    margin-left: 0;
+    margin-left: 0.5rem;
   }
   .swiper__container div.swiper-button-next{
-    right: 10px;
+    right: 20px;
+  }
+  div.shadow-overflow{
+    right: 0;
   }
 }
+
+@include custom-responsive-down(1100px){
+  div.swiper__container{
+    margin-left: 0.5rem;
+  }
+  .swiper__container div.swiper-button-next{
+    right: 20px;
+  }
+  div.shadow-overflow{
+    right: 0;
+  }
+}
+
 
 .swiper__container{
   position: relative;

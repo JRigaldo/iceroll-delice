@@ -2,7 +2,7 @@
 .field {
   position: relative;
   height: 45px;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .field-helper {
@@ -182,12 +182,14 @@ textarea.field-textarea {
   background-color: var(--gray-light);
   -webkit-appearance: none;
   width: 100%;
-  min-height: 72px;
+  min-height: 200px;
   font-size: 16px;
   border: 1px solid var(--secondary);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   resize: none;
+  font-family: var(--theme-font-family);
+  padding: 0.5rem;
 }
 
 textarea.field-textarea:after,

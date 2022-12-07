@@ -66,6 +66,15 @@
   padding-left: 0.5rem;
 }
 
+@include medium-down{
+  .gutter-sm-n > [class^="col-"],
+  .guttersm-n > [class^=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+
 @mixin grid-template($col: "", $limit: "") {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(#{$col}, #{$limit}));
