@@ -56,12 +56,6 @@
   align-items: center;
 }
 
-.card-default{
-  background-color: var(--white);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
 .shadow-overflow{
   z-index: 10;
   position: absolute;
@@ -81,22 +75,3 @@ div.swiper-button-next{
   color: var(--white);
   right: calc((100vw - 69rem) / 2);
 }
-
-/*
-div.swiper-button-previous,
-div.swiper-button-next{
-  z-index: 11;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
-}
-
-div.swiper-button-next{
-  right: 0;
-}
-
-div.swiper-button-previous{
-  left: 0;
-}
-
- */

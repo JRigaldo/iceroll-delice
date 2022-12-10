@@ -1,23 +1,13 @@
 $responsive-menu-width: 300px;
 
 /** ------- MOBILE NAV WHEN CLICKED ------- **/
-body.with-sidebar-language .mobile-menu-language {
-  @include transform(translateX($responsive-menu-width));
-}
-
-body.with-sidebar-social .mobile-menu-social {
-  @include transform(translateX($responsive-menu-width));
-}
-
 body.with-sidebar-links .mobile-menu-links {
   @include transform(translateX($responsive-menu-width * -1));
 }
 
 /** ------- SITE COVER WHEN CLICKED ------- **/
-body.with-sidebar-language,
-body.with-sidebar-social,
 body.with-sidebar-links {
-  overflow: hidden;
+  overflow-y: hidden;
 
   .site-cover {
     background-color: var(--white);
@@ -32,12 +22,10 @@ body.with-sidebar-links {
 }
 
 /** ------- OUSIDE MOBILE NAV ------- **/
-aside.mobile-menu.mobile-menu--left {
-  left: calc(-1 * #{$responsive-menu-width});
-}
 aside.mobile-menu.mobile-menu--right {
   right: calc(-1 * #{$responsive-menu-width});
 }
+
 aside.mobile-menu {
   position: fixed;
   width: $responsive-menu-width;
@@ -118,42 +106,6 @@ nav.mobile-menu--text {
       }
       &:last-child a{
         background-color: initial;
-      }
-    }
-  }
-}
-
-nav.mobile-menu--icon {
-  margin: 0 !important;
-  padding: 0 1rem;
-  position: absolute;
-  top: 5rem;
-  left: 0;
-  right: 0;
-
-  ul {
-    display: flex;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    -webkit-justify-content: flex-start;
-    align-items: flex-start;
-    -webkit-box-align: flex-start;
-    -moz-box-align: flex-start;
-    -ms-flex-align: flex-start;
-    -webkit-align-items: flex-start;
-    margin: 1rem 0;
-
-    li.mobile-menu--icon-item {
-      width: 20px;
-      height: 20px;
-      margin: 1rem auto;
-
-      a {
-        @include icon($color-icon: var(--theme-primary), $color-hover: var(--white));
       }
     }
   }

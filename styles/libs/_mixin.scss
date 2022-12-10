@@ -101,7 +101,7 @@ $custom-responsive: 555px !default;
   }
 }
 
-@mixin icon($width-a: 30px, $height-a: 30px, $width-icon: 20px, $height-icon: 20px, $color-icon: var(--white), $color-hover: var(--secondary)) {
+@mixin icon($width-a: 30px, $height-a: 30px, $width-icon: 20px, $height-icon: 20px, $color-icon: var(--white), $color-hover: var(--theme-primary)) {
   position: relative;
   display: block;
   width: $width-a;
@@ -118,12 +118,20 @@ $custom-responsive: 555px !default;
     fill: $color-icon;
     transition-duration: 300ms;
      -webkit-transition-duration: 300ms;
+    path{
+      transition-duration: 300ms;
+      -webkit-transition-duration: 300ms;
+      fill: $color-icon;
+    }
     
   }
 
   &:hover {
     svg {
       fill: $color-hover;
+      path{
+        fill: $color-hover;
+      }
     }
   }
 }

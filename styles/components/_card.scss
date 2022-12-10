@@ -1,3 +1,10 @@
+.card-default{
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
 .card-layup{
   position: relative;
   width: 100%;
@@ -72,7 +79,7 @@ a.card-layup:hover{
   }
 }
 
-a.card-default:hover{
+a figure.card-default:hover{
   background: rgb(79,19,26);
   background: linear-gradient(299deg, rgba(79,19,26,1) 0%, rgba(232,59,78,1) 61%);
 }
@@ -93,9 +100,28 @@ a.card-default:hover{
   }
 }
 
-.card-default.card-theme-primary{
+a figure.card-default.card-theme-primary{
   background-color: var(--theme-primary);
   figcaption > * {
     color: var(--white);
+  }
+}
+
+.card-default.card-theme-primary:hover{
+  background: rgb(182,228,247);
+  background: linear-gradient(99deg, rgba(182,228,247,1) 0%, rgba(255,237,0,1) 36%, rgba(232,59,78,1) 54%, rgba(232,59,77,1) 77%, rgba(255,237,0,1) 86%, rgba(0,159,227,1) 100%);
+  picture{
+    position: relative;
+    display: block;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: var(--light);
+      opacity: 0.2;
+    }
   }
 }
