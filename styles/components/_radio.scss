@@ -9,19 +9,19 @@ input[type="radio"].field-radio{
 
 label.field-label-radio{
   position: relative;
+  display: inline;
   color: var(--black);
   border: 1px solid var(--secondary);
   border-radius: 5px;
   padding: 5px 10px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 120px;
+  width: auto;
   font-size: 16px;
 }
 
 label.field-label-radio:before{
   position: relative;
+  top: 7px;
+  display: inline-block;
   content: '';
   height: 25px;
   width: 25px;
@@ -36,11 +36,20 @@ input[type="radio"]:checked + label.field-label-radio {
 }
 
 input[type="radio"]:checked + label.field-label-radio:before{
+  position: relative;
+  top: 7px;
+  display: inline-block;
   content: '';
   height: 25px;
   width: 25px;
   border: 10px solid var(--white);
   background-color: var(--black);
+  border-radius: 50%;
+  left: -5px;
+}
+
+.field-radio span{
+  display: block;
 }
 
 
