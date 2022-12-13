@@ -149,7 +149,7 @@
     </section>
     <section class="mb-200">
         <form class="form-modal">
-            <div class="container-modal step-one">
+            <div class="container-modal step-one" id="modalBox1">
                 <h3 class="mb-20">Sélectionnez vos parfums</h3>
                 <div class="row-top gutter">
                     <div class="col-6 col-md-3">
@@ -421,9 +421,11 @@
                             <picture><img src="../images/carte-bricelet.jpg" alt="parfum bricelet"></picture>
                         </div>
                     </div>
+                    <span>Poursuivez la création du devis, remplissez le formulaire suivant</span>
+                    <div class="btn btn-primary" id="next1">Suivant</div>
                 </div>
             </div>
-            <div class="container-modal step-two">
+            <div class="container-modal step-two animated-disable" id="modalBox2">
                 <div class="row-top gutter">
                     <div class="col-md-12">
                         <h2 class="pt-30 pb-10">Compléter les informations de votre événement</h2>
@@ -561,7 +563,7 @@
                     <div class="col-12 col-md-6"></div>
                 </div>
             </div>
-            <div class="container-modal step-three">
+            <div class="container-modal step-three animated-disable" id="modalBox3">
                 <div class="row-top">
                     <div class="col-12 col-md-12">
                         <div class="field-radio">
@@ -680,6 +682,7 @@
     <script src="../js/swiper.js"></script>
     <script src="../js/form.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/modal.js"></script>
 </footer>
 </body>
 </html>

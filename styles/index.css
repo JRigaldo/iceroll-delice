@@ -2689,7 +2689,7 @@ h1.big-title {
 h3.title__white--custom {
   color: var(--white);
   text-align: center;
-  font-size: 1.5  rem;
+  font-size: 1.5rem;
   width: 100%;
   display: inline-block; }
 
@@ -3143,6 +3143,29 @@ footer nav.social--row-icon {
     transform: scale(1.01); }
   100% {
     transform: scale(1); } }
+.animated-disable {
+  display: none; }
+
+.animated.fadeOut {
+  animation: fadeOut 500ms ease-out; }
+
+.animated.fadeIn {
+  animation: fadeIn 500ms ease-out; }
+
+@keyframes fadeOut {
+  from {
+    transform: translateX(0);
+    opacity: 1; }
+  to {
+    transform: translateX(-999px);
+    opacity: 0; } }
+@keyframes fadeIn {
+  from {
+    transform: translateX(999px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
 .btn {
   display: block;
   letter-spacing: 1px;
@@ -3159,7 +3182,8 @@ footer nav.social--row-icon {
 
 .btn-primary {
   background-color: var(--theme-primary);
-  color: var(--white); }
+  color: var(--white);
+  border: 1px solid var(--theme-primary); }
   .btn-primary:hover {
     background-color: var(--white);
     color: var(--theme-primary);
@@ -4280,6 +4304,10 @@ input:checked[type="checkbox"].field-check + label span.field-check-yes {
   display: block; }
 
 .form-modal {
+  position: relative; }
+
+.container-modal {
+  position: relative;
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -4287,14 +4315,11 @@ input:checked[type="checkbox"].field-check + label span.field-check-yes {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1rem;
   border-radius: 10px;
-  backdrop-filter: blur(5px); }
+  backdrop-filter: blur(5px);
+  overflow: hidden; }
 
-.container-modal.step-one {
-  display: block; }
-
-.step-one,
-.step-two,
-.step-three {
-  display: none; }
+.container-modal.animated-disable {
+  position: absolute;
+  transform: translateX(9999px); }
 
 /*# sourceMappingURL=index.css.map */

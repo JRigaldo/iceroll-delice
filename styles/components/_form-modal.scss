@@ -1,4 +1,9 @@
 .form-modal{
+  position: relative;
+}
+
+.container-modal{
+  position: relative;
   display: block;
   width: 100%;
   margin: 0 auto;
@@ -7,14 +12,10 @@
   padding: 1rem;
   border-radius: 10px;
   backdrop-filter: blur(5px);
+  overflow: hidden;
 }
 
-.container-modal.step-one{
-  display: block;
-}
-
-.step-one,
-.step-two,
-.step-three{
-  display: none;
+.container-modal.animated-disable{
+  position: absolute;
+  transform: translateX(9999px);
 }

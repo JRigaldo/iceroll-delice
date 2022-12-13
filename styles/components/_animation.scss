@@ -187,3 +187,37 @@
   }
 }
 
+.animated-disable{
+  display: none;
+}
+
+.animated.fadeOut{
+  animation: fadeOut 500ms ease-out;
+}
+
+.animated.fadeIn{
+  animation: fadeIn 500ms ease-out;
+}
+
+@keyframes fadeOut {
+  from{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to{
+    transform: translateX(-999px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from{
+    transform: translateX(999px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
