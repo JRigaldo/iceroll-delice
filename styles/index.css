@@ -2458,7 +2458,8 @@ body {
   font-family: var(--theme-font-family);
   background-color: var(--black);
   font-size: var(--font-size-body);
-  color: var(--black); }
+  color: var(--black);
+  overflow: hidden; }
 
 h1 {
   font-size: 3.3rem;
@@ -2472,7 +2473,7 @@ h2 {
   letter-spacing: 1px; }
 
 h3 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: var(--body-bold);
   letter-spacing: 1px;
   line-height: 3rem; }
@@ -2686,8 +2687,7 @@ h1.big-title {
   color: var(--white);
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); }
 
-h3.title__white--custom {
-  color: var(--white);
+h3.middle-title {
   text-align: center;
   font-size: 1.5rem;
   width: 100%;
@@ -3157,11 +3157,11 @@ footer nav.social--row-icon {
     transform: translateX(0);
     opacity: 1; }
   to {
-    transform: translateX(-999px);
+    transform: translateX(-9999px);
     opacity: 0; } }
 @keyframes fadeIn {
   from {
-    transform: translateX(999px);
+    transform: translateX(9999px);
     opacity: 0; }
   to {
     transform: translateX(0);
@@ -3183,14 +3183,16 @@ footer nav.social--row-icon {
 .btn-primary {
   background-color: var(--theme-primary);
   color: var(--white);
-  border: 1px solid var(--theme-primary); }
+  border: 1px solid var(--theme-primary);
+  cursor: pointer; }
   .btn-primary:hover {
     background-color: var(--white);
     color: var(--theme-primary);
     border: 1px solid var(--theme-primary); }
 
 .btn-secondary {
-  background-color: var(--white); }
+  background-color: var(--white);
+  cursor: pointer; }
   .btn-secondary:hover {
     background-color: var(--theme-primary); }
 
@@ -3198,7 +3200,8 @@ footer nav.social--row-icon {
   background-color: var(--white);
   color: var(--theme-primary);
   border-radius: 50px;
-  border: 1px solid var(--theme-primary); }
+  border: 1px solid var(--theme-primary);
+  cursor: pointer; }
   .btn-accent:hover {
     background-color: var(--theme-primary);
     color: var(--white); }
@@ -3779,6 +3782,8 @@ input[type="radio"]:checked + label.field-label-radio:before {
       right: -4px;
       bottom: -30px;
       background-color: var(--white);
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
       border-radius: 5px; }
     .field-checkbox label:after {
       display: none;
@@ -3791,7 +3796,9 @@ input[type="radio"]:checked + label.field-label-radio:before {
       bottom: -30px;
       background: #b6e4f7;
       background: linear-gradient(99deg, #b6e4f7 0%, #ffed00 36%, #e83b4e 54%, #e83b4d 77%, #ffed00 86%, #009fe3 100%);
-      border-radius: 5px; }
+      border-radius: 5px;
+      -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3); }
     .field-checkbox label span.txt-label {
       position: absolute;
       z-index: 8;
@@ -4304,22 +4311,31 @@ input:checked[type="checkbox"].field-check + label span.field-check-yes {
   display: block; }
 
 .form-modal {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: var(--white);
+  overflow: hidden; }
 
 .container-modal {
   position: relative;
   display: block;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 1rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  overflow: hidden; }
+  width: 100%; }
 
 .container-modal.animated-disable {
-  position: absolute;
   transform: translateX(9999px); }
+
+.container-modal.animated {
+  position: absolute;
+  top: 0; }
+
+.container-modal.animated.animated-active {
+  position: relative; }
+
+.animated-active {
+  transform: translateX(0); }
 
 /*# sourceMappingURL=index.css.map */

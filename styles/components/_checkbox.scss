@@ -34,6 +34,7 @@
       right: -4px;
       bottom: -30px;
       background-color: var(--white);
+      @include shadow-light;
       border-radius: 5px;
     }
     &:after{
@@ -48,6 +49,7 @@
       background: rgb(182,228,247);
       background: linear-gradient(99deg, rgba(182,228,247,1) 0%, rgba(255,237,0,1) 36%, rgba(232,59,78,1) 54%, rgba(232,59,77,1) 77%, rgba(255,237,0,1) 86%, rgba(0,159,227,1) 100%);
       border-radius: 5px;
+      @include shadow-light;
     }
     span.txt-label{
       position: absolute;

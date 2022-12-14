@@ -205,14 +205,14 @@
     opacity: 1;
   }
   to{
-    transform: translateX(-999px);
+    transform: translateX(-9999px);
     opacity: 0;
   }
 }
 
 @keyframes fadeIn {
   from{
-    transform: translateX(999px);
+    transform: translateX(9999px);
     opacity: 0;
   }
   to{
@@ -220,4 +220,5 @@
     opacity: 1;
   }
 }
+
 

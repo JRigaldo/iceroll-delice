@@ -17,6 +17,7 @@
   background-color: var(--theme-primary);
   color: var(--white);
   border: 1px solid var(--theme-primary);
+  cursor: pointer;
   &:hover {
     background-color: var(--white);
     color: var(--theme-primary);
@@ -26,6 +27,7 @@
 
 .btn-secondary {
   background-color: var(--white);
+  cursor: pointer;
   &:hover {
     background-color: var(--theme-primary);
   }
@@ -36,6 +38,7 @@
   color: var(--theme-primary);
   border-radius: 50px;
   border: 1px solid var(--theme-primary);
+  cursor: pointer;
   &:hover {
     background-color: var(--theme-primary);
     color: var(--white);

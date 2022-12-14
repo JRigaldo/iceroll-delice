@@ -142,6 +142,11 @@ $custom-responsive: 555px !default;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+@mixin shadow-light{
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
+}
+
 @mixin text-gradient(){
   background: #FFFFFF;
   background: linear-gradient(to right, #FFFFFF 0%, #B6E4F7 21%, #009FE3 73%, #FFED00 85%, #E83B4D 100%);
