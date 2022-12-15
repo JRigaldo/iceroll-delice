@@ -5,24 +5,28 @@ jQuery(function ($) {
             fadeAnimation('.step-1', 'fadeOutLeft', '.step-2', 'fadeInRight');
             activeTransition('.step-1', '.step-2');
             scrollTop('.form-modal--container');
+            progressStep('.bullet-1', '.bullet-2');
         });
 
         $('.next-2').click(function (event) {
             fadeAnimation('.step-2', 'fadeOutLeft', '.step-3', 'fadeInRight');
             activeTransition('.step-2', '.step-3');
             scrollTop('.form-modal--container');
+            progressStep('.bullet-2', '.bullet-3');
         });
 
         $('.prev-2').click(function () {
             fadeAnimation('.step-2', 'fadeInLeft', '.step-1', 'fadeOutRight');
             activeTransition('.step-2', '.step-1');
             scrollTop('.form-modal--container');
+            progressStep('.bullet-2', '.bullet-1');
         });
 
         $('.prev-3').click(function () {
             fadeAnimation('.step-3', 'fadeInLeft', '.step-2', 'fadeOutRight');
             activeTransition('.step-3', '.step-2');
             scrollTop('.form-modal--container');
+            progressStep('.bullet-3', '.bullet-2');
         });
 
         function fadeAnimation(prevElement, prevAnimation, nextElement, nextAnimation) {
@@ -55,6 +59,20 @@ jQuery(function ($) {
             $("html, body").animate({
                 scrollTop: $(container).offset().top - 100
             }, 500);
+        }
+
+        function progressStep(active, next){
+            if($(next).hasClass('bullet-done')){
+                console.log('test')
+                $(next).removeClass('bullet-done');
+                $(next).addClass('bullet-active')
+                $(active).removeClass('bullet-active');
+                $(active).removeClass('bullet-done');
+            }else{
+                $(active).addClass('bullet-done');
+                $(next).addClass('bullet-active');
+            }
+
         }
     });
 });

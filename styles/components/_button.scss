@@ -58,9 +58,10 @@
 }
 
 .center-center {
+  display: flex;
   justify-content: center;
   -webkit-justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   -webkit-box-align: center;
   -moz-box-align: center;
