@@ -213,14 +213,14 @@
     opacity: 1;
   }
   to{
-    transform: translateX(-9999px);
+    transform: translateX(-100%);
     opacity: 0;
   }
 }
 
 @keyframes fadeOutRight {
   from{
-    transform: translateX(-9999px);
+    transform: translateX(-100%);
     opacity: 0;
   }
   to{
@@ -231,7 +231,7 @@
 
 @keyframes fadeInRight {
   from{
-    transform: translateX(9999px);
+    transform: translateX(100%);
     opacity: 0;
   }
   to{
@@ -246,7 +246,7 @@
     opacity: 1;
   }
   to{
-    transform: translateX(9999px);
+    transform: translateX(100%);
     opacity: 0;
   }
 }

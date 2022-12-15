@@ -4,25 +4,25 @@ jQuery(function ($) {
         $('.next-1').click(function () {
             fadeAnimation('.step-1', 'fadeOutLeft', '.step-2', 'fadeInRight');
             activeTransition('.step-1', '.step-2');
-            scrollTop('.step-2');
+            scrollTop('.form-modal--container');
         });
 
         $('.next-2').click(function (event) {
             fadeAnimation('.step-2', 'fadeOutLeft', '.step-3', 'fadeInRight');
             activeTransition('.step-2', '.step-3');
-            scrollTop('.step-3');
+            scrollTop('.form-modal--container');
         });
 
         $('.prev-2').click(function () {
             fadeAnimation('.step-2', 'fadeInLeft', '.step-1', 'fadeOutRight');
             activeTransition('.step-2', '.step-1');
-            scrollTop('.step-1');
+            scrollTop('.form-modal--container');
         });
 
         $('.prev-3').click(function () {
             fadeAnimation('.step-3', 'fadeInLeft', '.step-2', 'fadeOutRight');
             activeTransition('.step-3', '.step-2');
-            scrollTop('.step-2');
+            scrollTop('.form-modal--container');
         });
 
         function fadeAnimation(prevElement, prevAnimation, nextElement, nextAnimation) {
@@ -54,7 +54,7 @@ jQuery(function ($) {
         function scrollTop(container){
             $("html, body").animate({
                 scrollTop: $(container).offset().top - 100
-            }, 200);
+            }, 500);
         }
     });
 });

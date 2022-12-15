@@ -9,6 +9,13 @@
   overflow: hidden;
 }
 
+.form-modal--container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
 .container-modal{
   position: relative;
   display: block;
@@ -16,12 +23,7 @@
 }
 
 .container-modal.animated-disable{
-  transform: translateX(9999px);
-}
-
-.container-modal.animated{
-  position: absolute;
-  top: 0;
+  display: none;
 }
 
 .container-modal.animated.animated-active{
@@ -29,5 +31,5 @@
 }
 
 .animated-active{
-  transform: translateX(0);
+  display: block;
 }
