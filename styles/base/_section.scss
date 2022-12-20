@@ -5,6 +5,29 @@
   width: 100%;
 }
 
+.splash--img{
+  z-index: -3;
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+  img{
+    @include absolute-center;
+  }
+  &:before{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 30vh;
+    content: '';
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  }
+}
+
 /**
 ------------- BACKGROUND IMAGE
  */
@@ -128,7 +151,7 @@ h1.big-title{
 
 h3.middle-title{
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   width: 100%;
   display: inline-block;
 }

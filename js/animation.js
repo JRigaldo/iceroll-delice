@@ -57,13 +57,12 @@ jQuery(function ($) {
 
         function scrollTop(container){
             $("html, body").animate({
-                scrollTop: $(container).offset().top - 100
+                scrollTop: $(container).offset().top - 200
             }, 500);
         }
 
         function progressStep(active, next){
             if($(next).hasClass('bullet-done')){
-                console.log('test')
                 $(next).removeClass('bullet-done');
                 $(next).addClass('bullet-active')
                 $(active).removeClass('bullet-active');
@@ -74,5 +73,6 @@ jQuery(function ($) {
             }
 
         }
+
     });
 });
