@@ -7,6 +7,26 @@
     line-height: 2rem;
   }
 
+  h1.banner-title{
+    font-size: 1.3rem;
+  }
+
+  div.gallery__text h3{
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+
+  figcation.text-caption{
+    font-size: 0.7rem;
+    padding: 0.3rem;
+  }
+
+  figcaption.caption-top-left,
+  span.caption-top-left{
+    top: 5px;
+    left: 5px;
+  }
+
   /**
   Card layup
    */
@@ -54,6 +74,7 @@
     figcaption > * {
       font-size: 0.7rem;
       padding: 0.2rem;
+      line-height: 1.3rem;
     }
   }
   /**

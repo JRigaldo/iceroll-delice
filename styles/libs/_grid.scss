@@ -60,6 +60,12 @@
   }
 }
 
+.gutter-columns > [class^="col-"],
+.gutter-columns  > [class^=" col-"]{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .gutter > [class^="col-"],
 .gutter > [class^=" col-"] {
   padding-right: 0.5rem;
@@ -68,9 +74,14 @@
 
 @include medium-down{
   .gutter-sm-n > [class^="col-"],
-  .guttersm-n > [class^=" col-"] {
+  .gutter-sm-n > [class^=" col-"] {
     padding-right: 0;
     padding-left: 0;
+  }
+  div.gutter-columns > [class^="col-"],
+  div.gutter-columns  > [class^=" col-"]{
+    margin-top: 2rem;
+    margin-bottom:2rem;
   }
 }
 

@@ -11,6 +11,14 @@ Form contact
   min-height: 800px;
 }
 
+.form{
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
 .form-box{
   max-width: 850px;
   min-height: 650px;
@@ -89,6 +97,21 @@ form .field-info {
     div.form-box__left{
       height: 400px;
     }
+  }
+}
+
+.form-user-icon{
+  display: block;
+  margin: 0 auto;
+  width: 48px;
+}
+
+.inscription-link{
+  display: inline-block;
+  color: var(--theme-primary);
+  transition-duration: 0.3s;
+  &:hover{
+    color: var(--black);
   }
 }
 
