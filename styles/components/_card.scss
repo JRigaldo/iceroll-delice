@@ -35,6 +35,9 @@
     position: relative;
     border-radius: 10px;
     width: 100%;
+    max-width: 535px;
+    display: block;
+    margin: 0 auto;
     @include shadow;
   }
 }
@@ -108,9 +111,9 @@ a figure.card-default.card-theme-primary{
       position: absolute;
       top: 0;
       right: 0;
-      bottom: 0;
+      bottom: 6px;
       left: 0;
-      background-color: var(--light);
+      background-color: var(--black);
       opacity: 0.2;
     }
   }

@@ -187,6 +187,9 @@ button:focus {
 .justify-content-center {
   justify-content: center; }
 
+.margin-block--25 {
+  margin: 25px 0; }
+
 .shadow-top {
   -webkit-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.25); }
@@ -4276,7 +4279,7 @@ section {
 
 .clouds {
   position: absolute;
-  z-index: -3;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -4288,17 +4291,25 @@ section {
     max-width: 100%;
     animation: animate-cloud calc(8s * var(--i)) linear infinite; }
 
-.banner-1 {
+.banner.banner-concept img {
+  max-width: 2048px; }
+
+.banner.banner-devis img {
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.banner {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url("../images/dany-eldora-2.jpg");
-  background-position: top center;
-  background-size: cover;
   width: 100%;
-  height: calc(100vh - var(--header-top)); }
-  .banner-1:before {
+  height: calc(100vh - var(--header-top));
+  -webkit-z-index: -1;
+  -moz-z-index: -1;
+  -ms-z-index: -1;
+  -o-z-index: -1;
+  -khtml-z-index: -1;
+  z-index: -1;
+  overflow: hidden; }
+  .banner:after {
     content: '';
     z-index: 1;
     position: absolute;
@@ -4308,7 +4319,53 @@ section {
     width: 100%;
     background: black;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%); }
+  .banner img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+    margin: 0 auto; }
 
+@media only screen and (max-width: 450px) {
+  picture.banner {
+    position: relative;
+    height: auto; }
+    picture.banner img {
+      position: relative;
+      left: auto;
+      transform: translateX(0); }
+
+  .splash.splash-over-image {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%); } }
+/**
+.banner-1{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../images/dany-eldora-2.jpg");
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: calc(100vh - var(--header-top));
+  &:before{
+    content: '';
+      z-index: 1;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 50vh;
+      width: 100%;
+      background: rgb(0,0,0);
+      background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+}
+*/
 .banner-middle {
   position: relative;
   background: black;
@@ -4646,6 +4703,9 @@ Gallery
   flex-direction: column;
   justify-content: center;
   height: 100%; }
+  .gallery__text figure,
+  .gallery__figure figure {
+    position: relative; }
 
 .gallery__figure img {
   border-radius: 10px;
@@ -5333,13 +5393,16 @@ footer nav.social--row-icon {
     background-size: 200%;
     z-index: -1;
     top: -4px;
-    left: -4px;
-    width: calc(100% + 8px);
+    left: 8px;
+    width: calc(100% - 16px);
     height: calc(100% + 8px); }
   .imgBox img {
     position: relative;
     border-radius: 10px;
     width: 100%;
+    max-width: 535px;
+    display: block;
+    margin: 0 auto;
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5); }
@@ -5399,9 +5462,9 @@ a figure.card-default.card-theme-primary {
       position: absolute;
       top: 0;
       right: 0;
-      bottom: 0;
+      bottom: 6px;
       left: 0;
-      background-color: var(--light);
+      background-color: var(--black);
       opacity: 0.2; }
 
 .card-button {

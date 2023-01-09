@@ -199,7 +199,7 @@ section{
 
 .clouds{
   position: absolute;
-  z-index: -3;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -213,6 +213,68 @@ section{
   }
 }
 
+.banner.banner-concept img{
+  max-width: 2048px;
+}
+
+.banner.banner-devis img {
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.banner{
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - var(--header-top));
+  -webkit-z-index: -1;
+  -moz-z-index: -1;
+  -ms-z-index: -1;
+  -o-z-index: -1;
+  -khtml-z-index: -1;
+  z-index: -1;
+  overflow: hidden;
+  &:after{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  }
+  img{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+@include custom-responsive-down(450px){
+  picture.banner{
+    position: relative;
+    height: auto;
+    img{
+      position: relative;
+      left: auto;
+      transform: translateX(0);
+    }
+  }
+
+  .splash.splash-over-image{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/**
 .banner-1{
   position: absolute;
   top: 0;
@@ -235,6 +297,7 @@ section{
       background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
   }
 }
+*/
 
 .banner-middle{
   position: relative;
@@ -617,6 +680,9 @@ Gallery
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  figure{
+    position: relative;
+  }
 }
 
 .gallery__figure img{

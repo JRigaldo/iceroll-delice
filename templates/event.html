@@ -131,9 +131,14 @@
         </nav>
     </aside>
     <section>
-        <div class="banner-1"></div>
-        <div class="container splash align-items-center align-items-end-medium-up align-items-end-medium-down">
-            <div class="mt-20 mb-100 mb-small-10">
+        <picture class="banner">
+            <source media="(max-width:768px)" srcset="../images/dany-eldora-2-768.jpg 768w">
+            <source media="(min-width:769px) and (max-width:1000px)" srcset="../images/dany-eldora-2-1000.jpg 1000w">
+            <source media="(min-width:1001px)" srcset="../images/dany-eldora-2.jpg 1920w">
+            <img src="../images/dany-eldora-2.jpg" alt="Dany Eldora geneve">
+        </picture>
+        <div class="container splash splash-over-image align-items-center align-items-end-medium-up align-items-end-medium-down">
+            <div class="mt-20 mb-100 mb-small-100">
                     <h1 class="txt-c txt-white banner-title">GLACES ROULÉE, UNE CUISINE MINUTE SAVOUREUSE ET SPÉCTACULAIRE FAITE PAR DES ARTISANS PASSIONNÉS</h1>
             </div>
         </div>
@@ -142,16 +147,18 @@
         <div class="container">
             <div class="row-stretch gutter gutter-columns">
                 <div class="col-12 col-md-6">
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/celibart-570.jpg" alt="Evenement celib'art">
+                            <figcaption class="text-caption caption-top-right">Célib’Art</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
                     <div class="gallery__text">
                         <h3>Vos invités seront ébahi avec un concept original de glaces faites devant vous !</h3>
                         <p>Soyez témoins de la transformation de fruits frais en une réalisation artistique. Le tout garanti sans additif ni conservateur. La manière de concevoir un dessert devant un public créé le spectacle et captive assez facilement les personnes qui regardent le processus de création. Chaque glace se fait différemment et le glacier doit alors adapter sa façon de faire pour réaliser de beaux rouleaux appétissants.</p>
                     </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <figure class="gallery__figure">
-                        <img src="../images/celibart.jpg" alt="Evenement celib'art">
-                        <figcaption class="text-caption caption-top-right">Célib’Art</figcaption>
-                    </figure>
                 </div>
             </div>
         </div>
@@ -171,11 +178,13 @@
     <section>
         <div class="container">
             <div class="row-stretch gutter gutter-columns">
-                <div class="col-12 col-md-6 hidden-down">
-                    <figure class="gallery__figure">
-                        <img src="../images/lausanne-sur-mer.jpg" alt="Lausanne sur mer">
-                        <figcation class="text-caption caption-top-left">Lausanne sur Mer</figcation>
-                    </figure>
+                <div class="col-12 col-md-6">
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/lausanne-sur-mer-570.jpg" alt="Lausanne sur mer">
+                            <figcation class="text-caption caption-top-left">Lausanne sur Mer</figcation>
+                        </figure>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="gallery__text">
@@ -184,10 +193,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 hidden-up">
-                    <figure class="gallery__figure">
-                        <img src="../images/lausanne-sur-mer.jpg" alt="Lausanne sur mer">
-                        <figcation class="text-caption caption-top-left">Lausanne sur Mer</figcation>
-                    </figure>
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/grandvaux.jpg" alt="Evenement privé à Grand Vaux">
+                            <figcation class="text-caption caption-top-right">Grand Vaux</figcation>
+                        </figure>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="gallery__text">
@@ -195,17 +206,21 @@
                         <p>Nous prenons garde de toujours préférer les produits régionaux comme le lait cru, la crème, les fraises, les framboises, les abricots, etc. Bien entendu, les fruits qui ne se cultivent pas sous nos latitudes sont achetés dans des petites épiceries que nous avons choisi pour leur label Bio et fairtrade.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <figure class="gallery__figure">
-                        <img src="../images/grandvaux.jpg" alt="Evenement privé à Grand Vaux">
-                        <figcation class="text-caption caption-top-right">Grand Vaux</figcation>
-                    </figure>
-                </div>
                 <div class="col-12 col-md-6 hidden-down">
-                    <figure class="gallery__figure">
-                        <img src="../images/festival-des-roses.jpg" alt="Festival des Roses">
-                        <figcation class="text-caption caption-top-left">Festival des Roses</figcation>
-                    </figure>
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/grandvaux.jpg" alt="Evenement privé à Grand Vaux">
+                            <figcation class="text-caption caption-top-right">Grand Vaux</figcation>
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/festival-des-roses.jpg" alt="Festival des Roses">
+                            <figcation class="text-caption caption-top-left">Festival des Roses</figcation>
+                        </figure>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="gallery__text">
@@ -214,10 +229,12 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 hidden-up">
-                    <figure class="gallery__figure">
-                        <img src="../images/festival-des-roses.jpg" alt="Festival des Roses">
-                        <figcation class="text-caption caption-top-left">Festival des Roses</figcation>
-                    </figure>
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/bricelet.jpg" alt="Bricelet savoureux">
+                            <figcation class="text-caption caption-top-right">Bricelet savoureux</figcation>
+                        </figure>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="gallery__text">
@@ -225,11 +242,13 @@
                         <p>Nous avons une politique sans déchets. Nous cuisinons également nos propres bricelets le jour même, donnant ainsi une gourmandise de plus pour vos papilles. Cette pâtisserie est en option, car nous n’obligeons personne à la ripaille, mais nous sommes soucieux de l’écologie et essayons de changer les mœurs de consommation du mieux possible. C’est pourquoi, chez Iceroll, la seule chose qui se jette est la cuillère en bois.</p>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <figure class="gallery__figure">
-                        <img src="../images/bricelet.jpg" alt="Bricelet savoureux">
-                        <figcation class="text-caption caption-top-right">Bricelet savoureux</figcation>
-                    </figure>
+                <div class="col-12 col-md-6 hidden-down">
+                    <div class="gallery__figure">
+                        <figure>
+                            <img src="../images/bricelet.jpg" alt="Bricelet savoureux">
+                            <figcation class="text-caption caption-top-right">Bricelet savoureux</figcation>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>

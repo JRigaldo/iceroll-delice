@@ -26,7 +26,7 @@ $custom-responsive: 555px !default;
 }
 
 @mixin custom-responsice-middle($custom-responsive-max: "", $custom-responsive-min: "") {
-  @media only screen and (max-width: #{$custom-responsive-max}) and (mmin-width: #{$custom-responsive-min}) {
+  @media only screen and (max-width: #{$custom-responsive-max}) and (min-width: #{$custom-responsive-min}) {
     @content;
   }
 }
